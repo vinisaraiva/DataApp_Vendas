@@ -103,7 +103,7 @@ def main():
 
     fig = px.bar(produtos_vendidos_marca, x="Quantidade", y="Marca", orientation="h",
                  text="Quantidade", title="Total produtos vendidos por Marca",
-                 width=600, height=400, color_discrete_sequence=["#084d6e"])
+                 width=450, height=400, color_discrete_sequence=["#084d6e"])
     fig.update_yaxes(automargin=True)
     fig.update_layout(paper_bgcolor="rgb(215,215,215)", plot_bgcolor="rgb(215,215,215)")
     col1.plotly_chart(fig, theme=None)
